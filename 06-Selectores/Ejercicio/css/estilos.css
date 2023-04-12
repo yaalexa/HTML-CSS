@@ -1,0 +1,23 @@
+.boton{
+    width: 10vh;
+    height: 6vh;
+    border-radius: 5px 5px ;
+    border-color: aliceblue;
+    background-color: rgb(21, 117, 37);
+    color:black;
+}
+.contenido .boton::before {
+content: "Pasa por encima";
+font-size:3mm;
+}
+.contenido .boton:hover{
+    color:white;
+    background-color: rgb(70, 35, 151);
+}
+body .contenido .boton::content{
+    visibility: hidden;
+} 
+body .contenido .boton:hover::before {
+    content: "hecho!";
+    font-size:2vh;
+    }
