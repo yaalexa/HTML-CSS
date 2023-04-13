@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 120vh;
+    height: 60vh;
+    margin-top: 50px;
+    background-color: rgb(32, 34, 170);
+}
+.btn-modern{
+    width: 80px;
+    height: 60px;
+    background-color: coral;
+    padding: 5px 10px;
+    
+   animation: example 0.4s linear infinite alternate;
+}
+.btn-modern:after {
+    content:"";
+    animation: letter 0.4s linear infinite alternate;
+  }
+@keyframes example {
+    0%   {background-color:red; 
+          top:0px;
+           }
+   100%  {background-color:yellow; 
+        top:-5px;
+        box-shadow: 0 0 8px black;
+   }
+}
+@keyframes letter {
+    0%{
+        content:"";
+    }
+    100%{
+        content:"Boton Animacion";
+    }
+}
