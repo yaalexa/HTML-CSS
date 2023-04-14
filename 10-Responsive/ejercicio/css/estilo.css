@@ -1,0 +1,45 @@
+/*variables*/
+:root{
+    --color-barra:rgb(24, 24, 153);
+    --color-principal:red;
+    --color-item:rgb(208, 255, 0);
+    --tamaño-fuente:2rem;
+}
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.seccion-lateral{
+    display:flex;
+    flex-grow: 1;
+    background-color: var(--color-barra);
+    align-self:stretch;
+    gap:0.5rem;
+    padding: 0.5rem 0.6rem;
+    flex-direction: column;
+}
+.seccion-lateral .item{
+    font-size: var(--tamaño-fuente);
+    background-color: var(--color-item);
+   
+}
+.seccion-principal{
+    flex-grow: 7;
+    background-color: var(--color-principal);
+    align-self:stretch;
+}
+@media (max-width:640px){
+    .seccion-lateral{
+        flex-direction: row;
+        /*display: flex;
+        flex-wrap: wrap;*/
+        /*display: grid;
+        grid-template-columns: repeat(6,auto);*/
+    }
+    .seccion{
+       flex-direction:column-reverse;
+       align-self:stretch;
+    }
+}
